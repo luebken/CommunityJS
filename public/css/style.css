@@ -214,9 +214,14 @@ h2 {
 	font-weight: normal;
 }	
 
-div#main { 
+#main { 
 	min-height:600px;
 	height:expression(this.scrollHeight > 600 ? "auto":"600px"); 
+}
+#about p{ 
+    margin-bottom:10px;
+    font-size:15px;
+	
 }
 
 #nav {

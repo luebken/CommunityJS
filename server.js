@@ -31,6 +31,9 @@ app.get('/', function(req, res){
       groups: groups
       });  
 });
+app.get('/about', function(req, res){
+  res.render('about.jade');  
+});
 
 console.log('Server started on 3000');
 app.listen(3000);
