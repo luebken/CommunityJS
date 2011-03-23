@@ -16,8 +16,11 @@
         li= continent
           ul
             - for (var country in groups[continent])
-            li= country
-              ul
-                - for (var i = 0; i < groups[continent][country].length; i++)
-                  li!= groups[continent][country][i]
+              li= country
+                ul
+                  - for (var state in groups[continent][country])
+                    li= state
+                      ul
+                        - for (var i = 0; i < groups[continent][country][state].length; i++)
+                          li!= groups[continent][country][state][i]
             

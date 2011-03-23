@@ -10,15 +10,20 @@ var groups = {};
 for (var i in data) {
     var continent = data[i].continent;
     var country = data[i].country;
+    var state = data[i].state;
+    if(!state) state = 'no-state';
     if(!groups[continent]) {
         groups[continent] = {};
     }
     if(groups[continent][country] == undefined) {
         groups[continent][country] = [];
     }
+    if(groups[continent][country][state] == undefined) {
+        groups[continent][country][state] = [];
+    }
     var link = '<a href="'+ data[i].link+ '">' + data[i].link + '</a>';
-    groups[continent][country].push(data[i].town + ': ' +link);
-    groups[continent][country].sort();
+    groups[continent][country][state].push(data[i].town + ': ' +link);
+    groups[continent][country][state].sort();
 }
 console.log(groups)
 
