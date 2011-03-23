@@ -5,19 +5,14 @@ for (var i in data) {
     var country = data[i].country;
     var state = data[i].state;
     var link = '<a href="'+ data[i].link+ '">' + data[i].link + '</a>';
+    var item = data[i].town + ': ' + link;
     
     if(!state) state = 'no-state';
-    if(!groupstree[continent]) {
-        groupstree[continent] = {};
-    }
-    if(groupstree[continent][country] == undefined) {
-        groupstree[continent][country] = [];
-    }
-    if(groupstree[continent][country][state] == undefined) {
-        groupstree[continent][country][state] = [];
-    }
+    if(!groupstree[continent]) groupstree[continent] = {};
+    if(groupstree[continent][country] == undefined) groupstree[continent][country] = [];
+    if(groupstree[continent][country][state] == undefined) groupstree[continent][country][state] = [];
     
-    groupstree[continent][country][state].push(data[i].town + ': ' +link);
+    groupstree[continent][country][state].push(item);
     groupstree[continent][country][state].sort();
 }
 module.exports.groupstree = groupstree;
