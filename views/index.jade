@@ -10,18 +10,18 @@
   #main
     h2 JavaScript User Groups
     ul
-      - for (var continent in groups)
+      - for (var continent in tree)
         li= continent
           ul
-            - for (var country in groups[continent])
+            - for (var country in tree[continent])
               li= country
                 ul
-                  - for (var state in groups[continent][country])
+                  - for (var state in tree[continent][country])
                     - if(state == 'no-state')
-                      - for (var i = 0; i < groups[continent][country][state].length; i++)
-                        li!= groups[continent][country][state][i]
+                      - for (var i = 0; i < tree[continent][country][state].length; i++)
+                        li!= tree[continent][country][state][i]
                     - else 
                       li= state
                         ul
-                          - for (var i = 0; i < groups[continent][country][state].length; i++)
-                            li!= groups[continent][country][state][i]
+                          - for (var i = 0; i < tree[continent][country][state].length; i++)
+                            li!= tree[continent][country][state][i]
