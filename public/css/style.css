@@ -218,10 +218,11 @@ h2 {
 	min-height:600px;
 	height:expression(this.scrollHeight > 600 ? "auto":"600px"); 
 }
+#about {
+    font-size:15px;
+} 
 #about p{ 
     margin-bottom:10px;
-    font-size:15px;
-	
 }
 
 #nav {
