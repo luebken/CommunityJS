@@ -25,7 +25,6 @@ for (var i in data) {
     groups[continent][country][state].push(data[i].town + ': ' +link);
     groups[continent][country][state].sort();
 }
-console.log(groups)
 
 app.get('/', function(req, res){
   res.render('index.jade', { 
