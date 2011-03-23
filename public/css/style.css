@@ -214,7 +214,6 @@ h2 {
 	margin-left: 10px;
 	font-weight: normal;
 }	
-
 #main { 
 	min-height:600px;
 	height:expression(this.scrollHeight > 600 ? "auto":"600px"); 
@@ -252,7 +251,10 @@ h2 {
 	margin: 10px;
 	height: 100px;
 }
-
+#footer {
+    margin: 50px;
+	
+}
 
 
 
