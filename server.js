@@ -16,8 +16,9 @@ for (var i in data) {
     if(groups[continent][country] == undefined) {
         groups[continent][country] = [];
     }
-    var link = '<a href="'+ data[i].link+ '">'+ data[i].link+'</a>';
-    groups[continent][country].push(data[i].town + ': ' +link );
+    var link = '<a href="'+ data[i].link+ '">' + data[i].link + '</a>';
+    groups[continent][country].push(data[i].town + ': ' +link);
+    groups[continent][country].sort();
 }
 console.log(groups)
 
