@@ -35,5 +35,6 @@ app.get('/about', function(req, res){
   res.render('about.jade');  
 });
 
-console.log('Server started on 3000');
-app.listen(3000);
+var port = parseInt(process.env.PORT || 8000);
+app.listen(port);
+console.log('Server listening on ' + port);
