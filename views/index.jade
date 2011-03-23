@@ -11,3 +11,13 @@
         a(href= '/') About
   #main
     h2 User Groups
+    ul
+      - for (var continent in groups)
+        li= continent
+          ul
+            - for (var country in groups[continent])
+            li= country
+              ul
+                - for (var i in groups[continent][country])
+                li= groups[continent][country][i] 
+            
