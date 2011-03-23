@@ -19,5 +19,5 @@
             li= country
               ul
                 - for (var i in groups[continent][country])
-                li= groups[continent][country][i] 
+                li!= groups[continent][country][i] 
             

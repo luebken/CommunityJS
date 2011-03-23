@@ -16,9 +16,9 @@ for (var i in data) {
     if(!groups[continent][country]) {
         groups[continent][country] = [];
     }
-    groups[continent][country].push(data[i].town + ': ' + data[i].link);
+    var link = '<a href="'+ data[i].link+ '">'+ data[i].link+'</a>';
+    groups[continent][country].push(data[i].town + ': ' +link );
 }
-console.log(groups);
 
 app.get('/', function(req, res){
   res.render('index.jade', { 
