@@ -5,7 +5,8 @@ for (var i in data) {
     var country = data[i].country;
     var state = data[i].state;
     var link = '<a href="'+ data[i].link+ '">' + data[i].link + '</a>';
-    var item = data[i].town + ': ' + link;
+    var anchor = '<a name="'+ data[i].id+ '">'+ data[i].town + '</a>';
+    var item = anchor + ': ' + link;
     
     if(!state) state = 'no-state';
     if(!groupstree[continent]) groupstree[continent] = {};
@@ -16,3 +17,4 @@ for (var i in data) {
     groupstree[continent][country][state].sort();
 }
 module.exports.groupstree = groupstree;
+module.exports.rawdata = data;

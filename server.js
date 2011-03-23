@@ -14,6 +14,9 @@ app.get('/', function(req, res){
 app.get('/about', function(req, res){
   res.render('about.jade');  
 });
+app.get('/data', function(req, res){
+  res.send('var data = '  + JSON.stringify(data.rawdata)+ ";");  
+});
 
 var port = parseInt(process.env.PORT || 8000);
 app.listen(port);

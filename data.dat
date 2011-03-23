@@ -1,47 +1,51 @@
 module.exports = [
- {continent:'Africa', country:'South Africa', town:'Cape Town', link: 'http://www.meetup.com/Cape-Town-Javascript'}
-,{continent:'North America', country:'Canada', town:'Toronto', link: 'http://www.meetup.com/torontojs'}
-,{continent:'North America', country:'Canada', town:'Montreal', link: 'http://twitter.com/jsmontreal'}
-,{continent:'North America', country:'Canada', town:'Vancouver', link: 'http://www.meetup.com/vancouver-javascript-developers'}
-,{continent:'North America', country:'USA', state:'Arizona', town:'Phoenix', link: 'http://twitter.com/JavaScriptAZ'}
-,{continent:'North America', country:'USA', state:'California', town:'Los Angeles', link: 'http://socaljs.com'}
-,{continent:'North America', country:'USA', state:'California', town:'MountainView', link: 'http://www.meetup.com/javascript-9'}
-,{continent:'North America', country:'USA', state:'California', town:'Bay Area', link: 'http://www.meetup.com/BayJax'}
-,{continent:'North America', country:'USA', state:'California', town:'San Francicso', link: 'http://www.meetup.com/jsmeetup'}
-,{continent:'North America', country:'USA', state:'Colorado', town:'Boulder', link: 'http://www.meetup.com/Boulder-JS'}
-,{continent:'North America', country:'USA', state:'Georgia', town:'Atlanta', link: 'http://www.meetup.com/AtlantaJavaScript'}
-,{continent:'North America', country:'USA', state:'Georgia', town:'Georgia', link: 'http://www.meetup.com/AtlantaJavaScript'}
-,{continent:'North America', country:'USA', state:'Illinois', town:'Chicago', link: 'http://javascriptchicago.com'}
-,{continent:'North America', country:'USA', state:'Maryland', town:'Baltimore/DC', link: 'http://www.bmorejs.info'}
-,{continent:'North America', country:'USA', state:'Massachusetts', town:'Boston', link: 'http://www.meetup.com/javascript-2'}
-,{continent:'North America', country:'USA', state:'Nebraska', town:'Omaha', link: 'http://www.omahajs.org'}
-,{continent:'North America', country:'USA', state:'Nevada', town:'Las Vegas', link: 'http://www.vegasjs.net'}
-,{continent:'North America', country:'USA', state:'New York', town:'Brooklyn', link: 'http://www.meetup.com/brooklyn-javascript'}
-,{continent:'North America', country:'USA', state:'New York', town:'NYC', link: 'http://twitter.com/nycjs'}
-,{continent:'North America', country:'USA', state:'North Carolina', town:'NYC', link: 'http://www.charlottejs.org'}
-,{continent:'North America', country:'USA', state:'Raleigh-Durham', town:'NYC', link: 'http://www.trianglejavascript.org'}
-,{continent:'North America', country:'USA', state:'Ohio', town:'Cincinnati', link: 'http://cincijs.com'}
-,{continent:'North America', country:'USA', state:'Oregon', town:'Portland', link: 'http://pdxjs.com'}
-,{continent:'North America', country:'USA', state:'Pennsylvania', town:'Philadelphia', link: 'http://phillyjs.com'}
-,{continent:'North America', country:'USA', state:'Texas', town:'Austin', link: 'http://austinjavascript.com'}
-,{continent:'North America', country:'USA', state:'Texas', town:'Dallas', link: 'http://twitter.com/DallasNode'}
-,{continent:'North America', country:'USA', state:'Texas', town:'Dallas', link: 'http://twitter.com/DallasJS'}
-,{continent:'North America', country:'USA', state:'Utah', town:'Lindon', link: 'http://utahjs.com'}
-,{continent:'Europe', country:'Austria', town:'Vieanna', link: 'http://www.meetup.com/viennajs'}
-,{continent:'Europe', country:'France', town:'Vieanna', link: 'http://parisjs.org'}
-,{continent:'Europe', country:'Germany', town:'Cologne', link: 'http://colognejs.de'}
-,{continent:'Europe', country:'Germany', town:'Berlin', link: 'http://twitter.com/berlinjs'}
-,{continent:'Europe', country:'Germany', town:'Frankfurt', link: 'http://twitter.com/jsugfra'}
-,{continent:'Europe', country:'Germany', town:'Hamburg', link: 'http://www.meetup.com/hamburg-js'}
-,{continent:'Europe', country:'Germany', town:'Munich', link: 'http://munichjs.org'}
-,{continent:'Europe', country:'Hungary', town:'Budapest', link: 'http://www.meetup.com/budapest-js'}
-,{continent:'Europe', country:'Netherlands', town:'Amsterdam', link: 'http://twitter.com/amsterdamjs'}
-,{continent:'Europe', country:'Sweden', town:'Gothenburg', link: 'http://twitter.com/got_js'}
-,{continent:'Europe', country:'Sweden', town:'Gothenburg', link: 'http://twitter.com/got_js'}
-,{continent:'Europe', country:'Swiss', town:'Zurich', link: 'http://techup.ch/tag/JSZurich'}
-,{continent:'Europe', country:'UK', town:'Brighton', link: 'http://asyncjs.com'}
-,{continent:'Europe', country:'UK', town:'Leeds', link: 'http://leedsjs.org'}
-,{continent:'Europe', country:'UK', town:'London', link: 'http://www.meetup.com/londonajax'}
-,{continent:'Oceania', country:'Australia', town:'Brisbane', link: 'http://brisjs.com'}
-,{continent:'Oceania', country:'Australia', town:'Sydney', link: 'http://sydjs.com'}
+ {id:1, continent:'Africa', country:'South Africa', town:'Cape Town', link: 'http://www.meetup.com/Cape-Town-Javascript', 
+ lat:-33.924788, lng: 18.429916 }
+,{id:2, continent:'North America', country:'Canada', town:'Toronto', link: 'http://www.meetup.com/torontojs', lat: 43.6525, lng:-79.381667 }
+,{id:3, continent:'North America', country:'Canada', town:'Montreal', link: 'http://twitter.com/jsmontreal', lat: 45.508889, lng: -73.554167}
+,{id:4, continent:'North America', country:'Canada', town:'Vancouver', link: 'http://www.meetup.com/vancouver-javascript-developers', lat:49.261226, lng:-123.113927}
+,{id:5, continent:'North America', country:'USA', state:'Arizona', town:'Phoenix', link: 'http://twitter.com/JavaScriptAZ', lat: 33.448377,lng: -112.074037}
+,{id:6, continent:'North America', country:'USA', state:'California', town:'Los Angeles', link: 'http://socaljs.com', lat: 34.052234, lng:-118.243685}
+,{id:7, continent:'North America', country:'USA', state:'California', town:'Mountain View', link: 'http://www.meetup.com/javascript-9', lat: 37.386052, lng:-122.083851}
+,{id:8, continent:'North America', country:'USA', state:'California', town:'Bay Area', link: 'http://www.meetup.com/BayJax', lat: 37.714145, lng: -122.25}
+,{id:9, continent:'North America', country:'USA', state:'California', town:'San Francicso', link: 'http://www.meetup.com/jsmeetup', lat: 37.77493, lng:-122.419415}
+,{id:10, continent:'North America', country:'USA', state:'Colorado', town:'Boulder', link: 'http://www.meetup.com/Boulder-JS', lat:40.014986,lng:-105.270546}
+,{id:11, continent:'North America', country:'USA', state:'Georgia', town:'Atlanta', link: 'http://www.meetup.com/AtlantaJavaScript', lat: 
+33.748995,lng:-84.387982}
+,{id:13, continent:'North America', country:'USA', state:'Illinois', town:'Chicago', link: 'http://javascriptchicago.com', lat:41.878114,lng:-87.629798}
+,{id:14, continent:'North America', country:'USA', state:'Maryland', town:'Baltimore/DC', link: 'http://www.bmorejs.info', lat:
+39.290385, lng:-76.612189}
+,{id:15, continent:'North America', country:'USA', state:'Massachusetts', town:'Boston', link: 'http://www.meetup.com/javascript-2', lat:42.358431,lng:-71.059773}
+,{id:16, continent:'North America', country:'USA', state:'Nebraska', town:'Omaha', link: 'http://www.omahajs.org', lat:41.254006,lng:-95.999258}
+,{id:17, continent:'North America', country:'USA', state:'Nevada', town:'Las Vegas', link: 'http://www.vegasjs.net', lat:36.114646,lng:-115.172816}
+,{id:18, continent:'North America', country:'USA', state:'New York', town:'Brooklyn', link: 'http://www.meetup.com/brooklyn-javascript', lat:40.65,lng:-73.95}
+,{id:19, continent:'North America', country:'USA', state:'New York', town:'NYC', link: 'http://twitter.com/nycjs', lat:40.714353,lng:-74.005973}
+,{id:20, continent:'North America', country:'USA', state:'North Carolina', town:'Charlotte', link: 'http://www.charlottejs.org', lat: 35.227087, lng:-80.843127}
+,{id:21, continent:'North America', country:'USA', state:'North Carolina', town:'Raleigh-Durham', link: 'http://www.trianglejavascript.org', lat:35.772096, lng:-78.638614}
+,{id:22, continent:'North America', country:'USA', state:'Ohio', town:'Cincinnati', link: 'http://cincijs.com', lat:39.103118,lng:-84.51202}
+,{id:23, continent:'North America', country:'USA', state:'Oregon', town:'Portland', link: 'http://pdxjs.com', lat:45.523452,lng:-122.676207}
+,{id:24, continent:'North America', country:'USA', state:'Pennsylvania', town:'Philadelphia', link: 'http://phillyjs.com', lat:39.952335, lng:-75.163789}
+,{id:25, continent:'North America', country:'USA', state:'Texas', town:'Austin', link: 'http://austinjavascript.com', lat:30.267153,lng:-97.743061}
+,{id:26, continent:'North America', country:'USA', state:'Texas', town:'Dallas', link: 'http://twitter.com/DallasNode', lat: 32.802955,lng:-96.769923}
+,{id:27, continent:'North America', country:'USA', state:'Texas', town:'Dallas', link: 'http://twitter.com/DallasJS', lat: 32.802955, lng:-96.769923}
+,{id:28, continent:'North America', country:'USA', state:'Utah', town:'Lindon', link: 'http://utahjs.com', lat:
+40.343286,lng:-111.720761}
+,{id:29, continent:'Europe', country:'Austria', town:'Vieanna', link: 'http://www.meetup.com/viennajs', lat: 48.208174, lng:16.373819}
+,{id:30, continent:'Europe', country:'France', town:'Paris', link: 'http://parisjs.org', lat: 48.856667, lng: 2.350987}
+,{id:31, continent:'Europe', country:'Germany', town:'Cologne', link: 'http://colognejs.de', lat:51.151786, lng:10.415039}
+,{id:32, continent:'Europe', country:'Germany', town:'Berlin', link: 'http://twitter.com/berlinjs', lat:52.523405,lng:13.4114}
+,{id:33, continent:'Europe', country:'Germany', town:'Frankfurt', link: 'http://twitter.com/jsugfra', lat:50.111512,lng:8.680506}
+,{id:34, continent:'Europe', country:'Germany', town:'Hamburg', link: 'http://www.meetup.com/hamburg-js', lat: 
+53.553815,lng: 9.991575}
+,{id:35, continent:'Europe', country:'Germany', town:'Munich', link: 'http://munichjs.org', lat:48.139127,lng:11.580186}
+,{id:36, continent:'Europe', country:'Hungary', town:'Budapest', link: 'http://www.meetup.com/budapest-js', lat:47.498406,lng:19.040758}
+,{id:37, continent:'Europe', country:'Netherlands', town:'Amsterdam', link: 'http://twitter.com/amsterdamjs', lat:52.373056,lng: 4.892222}
+,{id:38, continent:'Europe', country:'Sweden', town:'Gothenburg', link: 'http://twitter.com/got_js', lat: 57.696994,lng: 11.9865}
+,{id:40, continent:'Europe', country:'Swiss', town:'Zurich', link: 'http://techup.ch/tag/JSZurich', lat:47.381791,lng:8.535325 }
+,{id:41, continent:'Europe', country:'UK', town:'Brighton', link: 'http://asyncjs.com', lat:50.819522,lng:-0.13642}
+,{id:42, continent:'Europe', country:'UK', town:'Leeds', link: 'http://leedsjs.org', lat: 53.799639,lng:-1.549122}
+,{id:43, continent:'Europe', country:'UK', town:'London', link: 'http://www.meetup.com/londonajax', lat: 
+51.500152,lng:-0.126236}
+,{id:44, continent:'Oceania', country:'Australia', town:'Brisbane', link: 'http://brisjs.com', lat:-27.470933,lng:153.023502}
+,{id:45, continent:'Oceania', country:'Australia', town:'Sydney', link: 'http://sydjs.com', lat: -33.868901,lng:151.207091}
 ] 

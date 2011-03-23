@@ -253,8 +253,14 @@ h2 {
 }
 #footer {
     margin: 50px;
-	
 }
+#map_canvas { 
+    width: 450px;
+    height: 300px;
+    border: 1px;
+    margin-bottom: 20px; 
+}
+
 
 
 
