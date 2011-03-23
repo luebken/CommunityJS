@@ -18,6 +18,6 @@
             - for (var country in groups[continent])
             li= country
               ul
-                - for (var i in groups[continent][country])
-                li!= groups[continent][country][i] 
+                - for (var i = 0; i < groups[continent][country].length; i++)
+                  li!= groups[continent][country][i]
             
