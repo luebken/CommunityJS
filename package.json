@@ -1,0 +1,7 @@
+{
+  "name":"communityjs",
+  "version":"0.0.1",
+  "dependencies":{
+    "express":"1.0.0"
+  }
+}
