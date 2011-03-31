@@ -26,5 +26,5 @@ window.addEventListener("load", function() {
     for(var i in data) {
         addMarker(data[i], map);
     }
-});
+}, false);
 
