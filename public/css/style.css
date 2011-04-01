@@ -130,8 +130,10 @@ input:invalid, textarea:invalid {
 /* These selection declarations have to be separate
    No text-shadow: twitter.com/miketaylr/status/12228805301
    Also: hot pink! */
+/*
 ::-moz-selection{ background: #FF5E99; color:#fff; text-shadow: none; }
 ::selection { background:#FF5E99; color:#fff; text-shadow: none; }
+*/
 
 /* j.mp/webkit-tap-highlight-color */
 a:link { -webkit-tap-highlight-color: #FF5E99; }
@@ -194,6 +196,7 @@ h2 {
 
 #main {
 	background-color: #e1ddd9;
+	width: 600px;
 	padding: 0px;
 	margin-left: 200px;
 	margin-right: 50px; 
@@ -226,11 +229,17 @@ h2 {
 }
 
 #nav {
+    background : red;
+    border : 1;
 	float: left;
 	width: 200px;
-	min-height:600px;
-	margin: 0px 40px 10px 0px;
-	padding: 0px 10px 10px 10px;
+	min-height: 600px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+
+#nav ul {
+    margin-right:20px;
 }
 
 #nav li {
