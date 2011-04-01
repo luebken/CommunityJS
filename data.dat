@@ -48,13 +48,13 @@ module.exports = [
 51.500152,lng:-0.126236}
 ,{id:44, continent:'Oceania', country:'Australia', town:'Brisbane', link: 'http://brisjs.com', lat:-27.470933,lng:153.023502}
 ,{id:45, continent:'Oceania', country:'Australia', town:'Sydney', link: 'http://sydjs.com', lat: -33.868901,lng:151.207091}
-,{id:46, continent:'Africa', country:'South Africa', town:'Conf: JSINSA', link: 'http://www.jsinsa.com', lat: -26.053419,lng:28.089948}
-,{id:47, continent:'South America', country:'Brazil', town:'Conf: BrazilJS', link: 'http://braziljs.com.br/2011/', lat: -3.770954,lng:-38.486963}
-,{id:48, continent:'North America', country:'USA', state: 'Oregon', town:'JSConf', link: 'http://2011.jsconf.us/', lat: -3.770954, lng:-38.486963}
-,{id:49, continent:'North America', country:'USA', state: 'Oregon', town:'NodeConf', link: 'http://nodeconf.com/', lat: 45.517748, lng:-122.683058}
-,{id:51, continent:'North America', country:'USA', state: 'Texas', town:'Conf: Texas JavaScript Austin', link: 'http://2011.texasjavascript.com/', lat: 30.459406, lng:-97.790905}
-,{id:52, continent:'Europe', country:'Italy', town:'Conf: JSDay', link: 'http://www.jsday.it/', lat: 45.440099, lng:10.971686}
-,{id:53, continent:'Europe', country:'Germany', town:'Conf: JSDay at JAX', link: 'http://jax.de/2011/sessions/?tid=2026', lat: 49.449947, lng:8.469831}
-,{id:54, continent:'Europe', country:'Germany', town:'Conf: NodeCamp.EU', link: 'http://nodecamp.eu', lat:51.151786, lng:10.415039}
-,{id:55, continent:'North America', state:'California', country:'USA', town:'Conf: JQuery Conf', link: 'http://events.jquery.org/2011/sf-bay-area/', lat: 37.714145, lng: -122.25}
+,{id:46, continent:'Conference', country:'South Africa', town:'JSINSA', link: 'http://www.jsinsa.com', lat: -26.053419,lng:28.089948}
+,{id:47, continent:'Conference', country:'Brazil', town:'BrazilJS', link: 'http://braziljs.com.br/2011/', lat: -3.770954,lng:-38.486963}
+,{id:48, continent:'Conference', country:'USA', state: 'Oregon', town:'JSConf', link: 'http://2011.jsconf.us/', lat: -3.770954, lng:-38.486963}
+,{id:49, continent:'Conference', country:'USA', state: 'Oregon', town:'NodeConf', link: 'http://nodeconf.com/', lat: 45.517748, lng:-122.683058}
+,{id:51, continent:'Conference', country:'USA', state: 'Texas', town:'Texas JavaScript Austin', link: 'http://2011.texasjavascript.com/', lat: 30.459406, lng:-97.790905}
+,{id:52, continent:'Conference', country:'Italy', town:'JSDay', link: 'http://www.jsday.it/', lat: 45.440099, lng:10.971686}
+,{id:53, continent:'Conference', country:'Germany', town:'JSDay at JAX', link: 'http://jax.de/2011/sessions/?tid=2026', lat: 49.449947, lng:8.469831}
+,{id:54, continent:'Conference', country:'Germany', town:'NodeCamp.EU', link: 'http://nodecamp.eu', lat:51.151786, lng:10.415039}
+,{id:55, continent:'Conference', state:'California', country:'USA', town:'JQuery Conf', link: 'http://events.jquery.org/2011/sf-bay-area/', lat: 37.714145, lng: -122.25}
 ] 
