@@ -1,4 +1,6 @@
 var data = require('./data.dat');
+
+
 var groupstree = {};
 for (var i in data) {
     var continent = data[i].continent;
