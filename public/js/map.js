@@ -18,7 +18,7 @@ window.addEventListener("load", function() {
     var myOptions = {
         zoom: 1,
         center: latlng,
-        disableDefaultUI: true,
+        disableDefaultUI: false,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
