@@ -60,4 +60,5 @@ module.exports = [
 ,{id:53, continent:'Conference', country:'Germany', town:'JSDay at JAX', link: 'http://jax.de/2011/sessions/?tid=2026', lat: 49.449947, lng:8.469831}
 ,{id:54, continent:'Conference', country:'Germany', town:'NodeCamp.EU', link: 'http://nodecamp.eu', lat:51.151786, lng:10.415039}
 ,{id:55, continent:'Conference', state:'California', country:'USA', town:'JQuery Conf', link: 'http://events.jquery.org/2011/sf-bay-area/', lat: 37.714145, lng: -122.25}
+,{id:56, continent:'Europe', country:'Norway', town:'Oslo', link: 'http://www.meetup.com/framsia/', lat: 59.91089, lng: 10.750723}
 ] 
