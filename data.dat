@@ -43,7 +43,7 @@ module.exports = [
 ,{id:37, continent:'Europe', country:'Hungary', town:'Budapest', link: 'http://www.meetup.com/budapest-js', lat:47.498406,lng:19.040758}
 ,{id:38, continent:'Europe', country:'Netherlands', town:'Amsterdam', link: 'http://twitter.com/amsterdamjs', lat:52.373056,lng: 4.892222}
 ,{id:39, continent:'Europe', country:'Sweden', town:'Gothenburg', link: 'http://twitter.com/got_js', lat: 57.696994,lng: 11.9865}
-,{id:40, continent:'Europe', country:'Swiss', town:'Zurich', link: 'http://techup.ch/tag/JSZurich', lat:47.381791,lng:8.535325 }
+,{id:40, continent:'Europe', country:'Swiss', town:'Zurich', link: 'https://twitter.com/jszurich', lat:47.381791,lng:8.535325 }
 ,{id:41, continent:'Europe', country:'UK', town:'Brighton', link: 'http://asyncjs.com', lat:50.819522,lng:-0.13642}
 ,{id:42, continent:'Europe', country:'UK', town:'Leeds', link: 'http://leedsjs.org', lat: 53.799639,lng:-1.549122}
 ,{id:43, continent:'Europe', country:'UK', town:'London', link: 'http://www.meetup.com/londonajax', lat: 

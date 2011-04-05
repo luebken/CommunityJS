@@ -14,7 +14,7 @@
     #map_canvas
     ul
       - for (var continent in tree)
-        li= continent
+        li= (continent == "Conference") ? "Conferences" : continent
           ul
             - for (var country in tree[continent])
               li= country
