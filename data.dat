@@ -30,17 +30,19 @@ module.exports = [
 ,{id:27, continent:'North America', country:'USA', state:'Texas', town:'Dallas', link: 'http://twitter.com/DallasJS', lat: 32.802955, lng:-96.769923}
 ,{id:28, continent:'North America', country:'USA', state:'Utah', town:'Lindon', link: 'http://utahjs.com', lat:
 40.343286,lng:-111.720761}
-,{id:29, continent:'Europe', country:'Austria', town:'Vieanna', link: 'http://www.meetup.com/viennajs', lat: 48.208174, lng:16.373819}
-,{id:30, continent:'Europe', country:'France', town:'Paris', link: 'http://parisjs.org', lat: 48.856667, lng: 2.350987}
-,{id:31, continent:'Europe', country:'Germany', town:'Cologne', link: 'http://colognejs.de', lat:51.151786, lng:10.415039}
-,{id:32, continent:'Europe', country:'Germany', town:'Berlin', link: 'http://twitter.com/berlinjs', lat:52.523405,lng:13.4114}
-,{id:33, continent:'Europe', country:'Germany', town:'Frankfurt', link: 'http://twitter.com/jsugfra', lat:50.111512,lng:8.680506}
-,{id:34, continent:'Europe', country:'Germany', town:'Hamburg', link: 'http://www.meetup.com/hamburg-js', lat: 
+,{id:29, continent:'North America', country:'USA', state:'DC', town:'Washington', link: 'http://www.meetup.com/DC-jQuery-Users-Group', lat:
+38.908379,lng:-77.031808}
+,{id:30, continent:'Europe', country:'Austria', town:'Vienna', link: 'http://www.meetup.com/viennajs', lat: 48.208174, lng:16.373819}
+,{id:31, continent:'Europe', country:'France', town:'Paris', link: 'http://parisjs.org', lat: 48.856667, lng: 2.350987}
+,{id:32, continent:'Europe', country:'Germany', town:'Cologne', link: 'http://colognejs.de', lat:51.151786, lng:10.415039}
+,{id:33, continent:'Europe', country:'Germany', town:'Berlin', link: 'http://twitter.com/berlinjs', lat:52.523405,lng:13.4114}
+,{id:34, continent:'Europe', country:'Germany', town:'Frankfurt', link: 'http://twitter.com/jsugfra', lat:50.111512,lng:8.680506}
+,{id:35, continent:'Europe', country:'Germany', town:'Hamburg', link: 'http://www.meetup.com/hamburg-js', lat: 
 53.553815,lng: 9.991575}
-,{id:35, continent:'Europe', country:'Germany', town:'Munich', link: 'http://munichjs.org', lat:48.139127,lng:11.580186}
-,{id:36, continent:'Europe', country:'Hungary', town:'Budapest', link: 'http://www.meetup.com/budapest-js', lat:47.498406,lng:19.040758}
-,{id:37, continent:'Europe', country:'Netherlands', town:'Amsterdam', link: 'http://twitter.com/amsterdamjs', lat:52.373056,lng: 4.892222}
-,{id:38, continent:'Europe', country:'Sweden', town:'Gothenburg', link: 'http://twitter.com/got_js', lat: 57.696994,lng: 11.9865}
+,{id:36, continent:'Europe', country:'Germany', town:'Munich', link: 'http://munichjs.org', lat:48.139127,lng:11.580186}
+,{id:37, continent:'Europe', country:'Hungary', town:'Budapest', link: 'http://www.meetup.com/budapest-js', lat:47.498406,lng:19.040758}
+,{id:38, continent:'Europe', country:'Netherlands', town:'Amsterdam', link: 'http://twitter.com/amsterdamjs', lat:52.373056,lng: 4.892222}
+,{id:39, continent:'Europe', country:'Sweden', town:'Gothenburg', link: 'http://twitter.com/got_js', lat: 57.696994,lng: 11.9865}
 ,{id:40, continent:'Europe', country:'Swiss', town:'Zurich', link: 'http://techup.ch/tag/JSZurich', lat:47.381791,lng:8.535325 }
 ,{id:41, continent:'Europe', country:'UK', town:'Brighton', link: 'http://asyncjs.com', lat:50.819522,lng:-0.13642}
 ,{id:42, continent:'Europe', country:'UK', town:'Leeds', link: 'http://leedsjs.org', lat: 53.799639,lng:-1.549122}
