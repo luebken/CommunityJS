@@ -62,4 +62,5 @@ module.exports = [
 ,{id:55, continent:'Conference', state:'California', country:'USA', town:'JQuery Conf', link: 'http://events.jquery.org/2011/sf-bay-area/', lat: 37.714145, lng: -122.25}
 ,{id:56, continent:'Europe', country:'Norway', town:'Oslo', link: 'http://www.meetup.com/framsia/', lat: 59.91089, lng: 10.750723}
 ,{id:57, continent:'North America', country:'USA', state:'Washington' ,town:'Seattle', link: 'http://www.meetup.com/seattlejs/',lat: 51.151786, lng: 10.415039}
+,{id:58, continent:'Asia', country:'Singapore',town:'Singapore', link: 'http://www.beermatesjs.com/',lat: 1.301725, lng: 103.859897}
 ] 
