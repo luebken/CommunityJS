@@ -69,4 +69,5 @@ module.exports = [
 ,{id:62, continent:'Europe', country:'Sweden', town:'Malmö', link: 'http://www.meetup.com/The-Oresund-ExtJS-Meetup/', lat:  55.6033306, lng: 13.0013029 }
 ,{id:63, continent:'Europe', country:'Turkey', town:'Ankara', link: 'https://groups.google.com/group/jquery-turkish/ ', lat:  39.92077, lng: 32.85411 }
 ,{id:64, continent:'Conference', country:'Poland', town:'Warsaw', link: 'http://falsyvalues.com', lat: 52.251346, lng: 21.008949 }
+,{id:65, continent:'Europe', country:'Greece', town:'Athens', link: 'http://greecejs.posterous.com/', lat:  37.984528, lng: 23.716736 }
 ] 
