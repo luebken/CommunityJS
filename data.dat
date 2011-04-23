@@ -71,4 +71,6 @@ module.exports = [
 ,{id:64, continent:'Conference', country:'Poland', town:'Warsaw', link: 'http://falsyvalues.com', lat: 52.251346, lng: 21.008949 }
 ,{id:65, continent:'Europe', country:'Greece', town:'Athens', link: 'http://greecejs.posterous.com/', lat:  37.984528, lng: 23.716736 }
 ,{id:65, continent:'Africa', country:'South Africa', town:'Johannesburg', link: 'http://groups.google.com/group/joburg-js', lat: -26.044522, lng:  28.018441 }
+,{id:66, continent:'Asia', country:'Japan',town:'Kanazawa', link: 'http://kanazawajs.tumblr.com/',lat: 36.562498, lng: 136.657717}
+
 ] 
