@@ -73,4 +73,6 @@ module.exports = [
 ,{id:66, continent:'Africa', country:'South Africa', town:'Johannesburg', link: 'http://groups.google.com/group/joburg-js', lat: -26.044522, lng:  28.018441 }
 ,{id:67, continent:'Asia', country:'Japan',town:'Kanazawa', link: 'http://kanazawajs.tumblr.com/',lat: 36.562498, lng: 136.657717}
 ,{id:68, continent:'Europe', country:'Finnland',town:'Helsinki', link: 'http://frontend.fi/ ',lat: 50.597186, lng: 10.415039}
+,{id:69, continent:'North America', country:'USA', state:'South Carolina' ,town:'Charleston', link: 'http://meetup.com/charlestonjs',lat: 32.878578, lng: -79.923477}
+
 ] 
