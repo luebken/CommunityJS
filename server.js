@@ -1,6 +1,5 @@
 require.paths.unshift('./vendor')
 
-
 var express = require('express'),
     data = require('./data');
 var app = express.createServer();
@@ -19,6 +18,10 @@ app.get('/about', function(req, res){
 });
 app.get('/data', function(req, res){
   res.send('var data = '  + JSON.stringify(data.rawdata)+ ";");  
+});
+app.get('/api/rawData', function(req, res){
+  var funcName = req.param("callback", "toto");
+  res.send(funcName + '('  + JSON.stringify(data.rawdata)+ ");");  
 });
 
 var port = parseInt(process.env.PORT || 8000);
