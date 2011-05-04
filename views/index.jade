@@ -16,18 +16,18 @@
       - for (var continent in tree)
         li= (continent == "Conference") ? "Conferences" : continent
           ul
-            - for (var country in tree[continent])
+            - for (var country in tree[continent].sortedCountries())
               li= country
                 ul
-                  - for (var state in tree[continent][country])
+                  - for (var state in tree[continent].sortedCountries()[country])
                     - if(state == 'no-state')
-                      - for (var i = 0; i < tree[continent][country][state].length; i++)
-                        li!= tree[continent][country][state][i]
+                      - for (var i = 0; i < tree[continent].sortedCountries()[country][state].length; i++)
+                        li!= tree[continent].sortedCountries()[country][state][i]
                     - else 
                       li= state
                         ul
-                          - for (var i = 0; i < tree[continent][country][state].length; i++)
-                            li!= tree[continent][country][state][i]
+                          - for (var i = 0; i < tree[continent].sortedCountries()[country][state].length; i++)
+                            li!= tree[continent].sortedCountries()[country][state][i]
     #footer 
     | Want to add/change a group?
     a(href="https://groups.google.com/group/communityjs/") Let us know!
