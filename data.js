@@ -16,10 +16,15 @@ var tree;
 var rawdata; 
 function groupstree(callback) {
 	if(tree){
-		callback(tree, rawdata);
+		console.log('using cached data');
+		callback(null, tree, rawdata);
 		return;
 	}
 	couch.getCouchData(function(err, data) {
+		if(err) {
+			callback(err)
+			return;
+		}
 		tree = {};
 		rawdata = data;
 		for (var i in data) {
@@ -39,7 +44,7 @@ function groupstree(callback) {
 			tree[continentName].countries[country][state] = [];
 			tree[continentName].countries[country][state].push(item);
 		}
-		callback(tree);
+		callback(null, tree, rawdata);
 	})
 }
 module.exports.groupstree = groupstree;

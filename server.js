@@ -9,7 +9,7 @@ app.configure(function(){
 });
 
 app.get('/', function(req, res){
-	data.groupstree(function(gtree, rawdata){
+	data.groupstree(function(err, gtree, rawdata){
 	  res.render('index.jade', { 
 	      tree: gtree
 	  });
@@ -17,7 +17,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/data', function(req, res){
-	data.groupstree(function(gtree, rawdata){
+	data.groupstree(function(err, gtree, rawdata){
 	  res.send('var data = '  + JSON.stringify(rawdata)+ ";");  
 	});
 });
