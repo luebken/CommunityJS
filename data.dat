@@ -62,7 +62,7 @@ module.exports = [
 ,{id:54, continent:'Conference', country:'Germany', town:'NodeCamp.EU', link: 'http://nodecamp.eu', lat:51.151786, lng:10.415039}
 ,{id:55, continent:'Conference', state:'California', country:'USA', town:'JQuery Conf', link: 'http://events.jquery.org/2011/sf-bay-area/', lat: 37.714145, lng: -122.25}
 ,{id:56, continent:'Europe', country:'Norway', town:'Oslo', link: 'http://www.meetup.com/framsia/', lat: 59.91089, lng: 10.750723}
-,{id:57, continent:'North America', country:'USA', state:'Washington' ,town:'Seattle', link: 'http://www.meetup.com/seattlejs/',lat: 51.151786, lng: 10.415039}
+,{id:57, continent:'North America', country:'USA', state:'Washington' ,town:'Seattle', link: 'http://www.meetup.com/seattlejs/',lat:47.6062, lng: -122.3321}
 ,{id:59, continent:'Europe', country:'Sweden', town:'Malmö', link: 'http://www.meetup.com/The-Oresund-JavaScript-Meetup/', lat:  55.6033306, lng: 13.0013029 }
 ,{id:60, continent:'North America', country:'USA', state:'Ohio' ,town:'Columbus', link: 'https://twitter.com/cbusjs',lat: 39.997638, lng: -83.041534}
 ,{id:61, continent:'North America', country:'USA', state:'Texas' ,town:'Dallas', link: 'http://twitter.com/#!/clubajax',lat: 32.977132, lng: -96.82705}
@@ -72,7 +72,10 @@ module.exports = [
 ,{id:65, continent:'Europe', country:'Greece', town:'Athens', link: 'http://greecejs.posterous.com/', lat:  37.984528, lng: 23.716736 }
 ,{id:66, continent:'Africa', country:'South Africa', town:'Johannesburg', link: 'http://groups.google.com/group/joburg-js', lat: -26.044522, lng:  28.018441 }
 ,{id:67, continent:'Asia', country:'Japan',town:'Kanazawa', link: 'http://kanazawajs.tumblr.com/',lat: 36.562498, lng: 136.657717}
-,{id:68, continent:'Europe', country:'Finnland',town:'Helsinki', link: 'http://frontend.fi/ ',lat: 50.597186, lng: 10.415039}
+,{id:68, continent:'Europe', country:'Finnland',town:'Helsinki', link: 'http://frontend.fi/ ',lat: 60.1698, lng: 24.9382}
 ,{id:69, continent:'North America', country:'USA', state:'South Carolina' ,town:'Charleston', link: 'http://meetup.com/charlestonjs',lat: 32.878578, lng: -79.923477}
+,{id:70, continent:'Conference', country:'USA', state: 'DC', town:'Washington', link: 'http://capitoljs.com/', lat:38.8951, lng:-77.0364}
+,{id:71, continent:'Conference', country:'USA', state: 'DC', town:'Washington', link: 'http://dojoconf.com/', lat:38.8951, lng:-77.0364}
+
 
 ] 
