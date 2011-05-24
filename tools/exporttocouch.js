@@ -1,6 +1,6 @@
 console.log('exporting');
 
-var data = require('./data.dat'),
+var data = require('../data.dat'),
 	http = require('http');
 
 
@@ -10,7 +10,7 @@ for (var i=0; i < data.length; i++) {
 	var options = {
 		host: 'localhost',
 		port: '5984',
-		path: '/communityjs',
+		path: '/groups',
 		method: 'POST',
 		headers: {'Content-type': 'application/json'}
 	};
