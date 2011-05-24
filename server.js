@@ -1,6 +1,5 @@
 require.paths.unshift('./vendor')
 
-
 var express = require('express'),
     data = require('./data');
 var app = express.createServer();
@@ -10,15 +9,21 @@ app.configure(function(){
 });
 
 app.get('/', function(req, res){
-  res.render('index.jade', { 
-      tree: data.groupstree
-  });  
+	data.groupstree(function(gtree, rawdata){
+	  res.render('index.jade', { 
+	      tree: gtree
+	  });
+	});
 });
+
+app.get('/data', function(req, res){
+	data.groupstree(function(gtree, rawdata){
+	  res.send('var data = '  + JSON.stringify(rawdata)+ ";");  
+	});
+});
+
 app.get('/about', function(req, res){
   res.render('about.jade');  
-});
-app.get('/data', function(req, res){
-  res.send('var data = '  + JSON.stringify(data.rawdata)+ ";");  
 });
 
 var port = parseInt(process.env.PORT || 8000);
