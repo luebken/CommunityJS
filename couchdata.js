@@ -1,9 +1,10 @@
 var restler = require('restler');
 
 function getCouchData(callback) {
+	console.log('quering database')
 	restler.get('https://communityjs.cloudant.com/groups/_all_docs?include_docs=true', {
-		username: 'wherhoparcuouslandscande',
-		password: ''
+		username: require('./config').couchdb.username,
+		password: require('./config').couchdb.password
 	}).on('complete', function (data) {
 		var json = JSON.parse(data);  
 		if(json.rows) {
@@ -15,6 +16,7 @@ function getCouchData(callback) {
 			callback(null, groups);
 		}
 	}).on('error', function(err) {
+		console.log('err: ' + err);
 		callback(err);
 	});
 }
