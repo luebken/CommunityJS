@@ -1,4 +1,3 @@
-require.paths.unshift('./vendor')
 var express = require('express'),
     groups = require('./groups');
 
