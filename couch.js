@@ -1,6 +1,6 @@
 var restler = require('restler');
 
-function getCouchData(callback) {
+function queryData(callback) {
 	console.log('quering database')
 	restler.get('https://communityjs.cloudant.com/groups/_all_docs?include_docs=true', {
 		username: require('./config').couchdb.username,
@@ -20,5 +20,5 @@ function getCouchData(callback) {
 		callback(err);
 	});
 }
-module.exports.getCouchData = getCouchData;
+module.exports.queryData = queryData;
 

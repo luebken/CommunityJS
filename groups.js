@@ -1,4 +1,4 @@
-var couch = require('./couchdata.js');
+var couch = require('./couch.js');
 
 var continent = {};
 continent.sortedCountries = function () {
@@ -14,13 +14,13 @@ continent.sortedCountries = function () {
 
 var tree;
 var rawdata; 
-function groupstree(callback) {
+function getTree(callback) {
 	if(tree){
 		console.log('using cached data');
 		callback(null, tree, rawdata);
 		return;
 	}
-	couch.getCouchData(function(err, data) {
+	couch.queryData(function(err, data) {
 		if(err) {
 			callback(err)
 			return;
@@ -47,4 +47,4 @@ function groupstree(callback) {
 		callback(null, tree, rawdata);
 	})
 }
-module.exports.groupstree = groupstree;
+module.exports.getTree = getTree;

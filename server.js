@@ -1,7 +1,6 @@
-require.paths.unshift('./vendor')
-
 var express = require('express'),
-    data = require('./data');
+    groups = require('./groups');
+
 var app = express.createServer();
 
 app.configure(function(){
@@ -9,7 +8,7 @@ app.configure(function(){
 });
 
 app.get('/', function(req, res){
-	data.groupstree(function(err, gtree, rawdata){
+	groups.getTree(function(err, gtree, rawdata){
 	  res.render('index.jade', { 
 	      tree: gtree
 	  });
@@ -17,7 +16,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/data', function(req, res){
-	data.groupstree(function(err, gtree, rawdata){
+	groups.getTree(function(err, gtree, rawdata){
 	  res.send('var data = '  + JSON.stringify(rawdata)+ ";");  
 	});
 });
