@@ -211,7 +211,7 @@ h2 {
 #main li li {
 	font-size:13px;
 	margin-left: 10px;
-	font-weight: bold;
+	font-weight: normal; /* bold */
 }
 #main li li li{
 	margin-left: 10px;
@@ -259,22 +259,62 @@ h2 {
 	height: 100px;
 }
 #footer {
-    margin: 50px;
+	font-size: 16px;
 }
 #map_canvas { 
-    width: 450px;
+    width: 600px;
     height: 300px;
     border: 1px;
     margin-bottom: 20px; 
 }
 
-
-
-
-
-
-
-
+ul.tabs {
+	margin: 0;
+	padding: 0;
+	float: left;
+	list-style: none;
+	height: 32px; /*--Set height of tabs--*/
+	border-bottom: 1px solid #999;
+	border-left: 0px solid #999;
+	width: 100%;
+}
+ul.tabs li {
+	float: left;
+	margin: 0;
+	padding: 0;
+	height: 31px; /*--Subtract 1px from the height of the unordered list--*/
+	line-height: 31px; /*--Vertically aligns the text within the tab--*/
+	border: 1px solid #999;
+	border-left: 1px solid #999;
+	margin-bottom: -1px; /*--Pull the list item down 1px--*/
+	overflow: hidden;
+	position: relative;
+	background: #D4D0C9;
+}
+ul.tabs li a {
+	text-decoration: none;
+	color: #000;
+	display: block;
+	padding: 0 20px;
+	outline: none;
+}
+ul.tabs li a:hover {
+	background: #ccc;
+}
+html ul.tabs li.active, html ul.tabs li.active a:hover  { /*--Makes sure that the active tab does not listen to the hover properties--*/
+	background: #EDEBE8;
+	border-bottom: 1px solid #EDEBE8; /*--Makes the active tab look like it's connected with its content--*/
+}
+.tab_container {
+	border: 1px solid #999;
+	border-top: none;
+	overflow: hidden;
+	float: left; width: 100%;
+	background: #EDEBE8;
+}
+.tab_content {
+	padding: 20px;
+}
 
 
 
