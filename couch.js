@@ -1,16 +1,18 @@
 var restler = require('restler');
 
 function queryData(callback) {
-	console.log('quering database')
-	restler.get('https://communityjs.cloudant.com/groups/_all_docs?include_docs=true', {
-		username: require('./config').couchdb.username,
-		password: require('./config').couchdb.password
+	console.log('quering database');
+	var config = require('./config').couchdb;
+	restler.get(config.url, {
+		username: config.username,
+		password: config.password
 	}).on('complete', function (data) {
 		var json = JSON.parse(data);  
 		if(json.rows) {
 			var groups = [];
 			for (var i=0; i < json.rows.length; i++) {
-				groups.push(json.rows[i].doc);
+				var doc = json.rows[i].doc;
+				groups.push(doc);
 			};
 			console.log('Chill. Found ', groups.length, ' groups in CouchDB.');
 			callback(null, groups);
