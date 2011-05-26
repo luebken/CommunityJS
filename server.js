@@ -21,6 +21,11 @@ app.get('/data', function(req, res){
 	});
 });
 
+app.get('/flushcache', function(req, res){
+	groups.flushCache();
+	res.send('done');
+});
+
 app.get('/about', function(req, res){
   res.render('about.jade');  
 });

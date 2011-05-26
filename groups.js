@@ -59,4 +59,9 @@ function getTree(callback) {
 		callback(null, groups, conferences, rawdata);
 	})
 }
+
+function flushCache() {
+	groups = null;
+}
+module.exports.flushCache = flushCache;
 module.exports.getTree = getTree;
