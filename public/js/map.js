@@ -1,8 +1,8 @@
 var conf_icon = new google.maps.MarkerImage("http://www.google.com/intl/en_us/mapfiles/ms/micons/red-dot.png");
 var group_icon = new google.maps.MarkerImage("http://www.google.com/intl/en_us/mapfiles/ms/micons/blue-dot.png");
 
+
 var addMarker = function(data, map) {
-	console.log(data)
 	if(data.lat && data.lng) {
 		var myLatlng = new google.maps.LatLng(data.lat, data.lng);
 		var icon = (data.continent == 'Conference') ? conf_icon : group_icon;
@@ -10,8 +10,14 @@ var addMarker = function(data, map) {
 			position: myLatlng,
 			icon: icon
 		});
+		var infowindow = new google.maps.InfoWindow({
+		    content: '<div id="infowindow">'
+				+ '<h2>' + data.town + '</h2>'
+				+ '<a href ="'+data.link+'">' + data.link + '</a>'
+				+ '</div>'
+		});
 		google.maps.event.addListener(marker, 'click', function() {
-			location.href = "#" + data.id;
+		  	infowindow.open(map,marker);
 		});
 		marker.setMap(map);       
 	} else {
