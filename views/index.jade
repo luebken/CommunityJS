@@ -23,8 +23,8 @@
           - for (var continent in groups)
             li= continent
               ul
-                - for (var countryName in groups[continent].sortedCountries())
-                  - var country = groups[continent].sortedCountries()[countryName]
+                - for (var countryName in groups[continent])
+                  - var country = groups[continent][countryName]
                   li= countryName
                     ul
                       - for (var state in country)
@@ -38,8 +38,8 @@
                                 li!= country[state][i]
       #upcoming.tab_content
         ul
-          - for (var countryName in conferences['Conference'].sortedCountries())
-            - var country = conferences['Conference'].sortedCountries()[countryName]
+          - for (var countryName in conferences['Conference'])
+            - var country = conferences['Conference'][countryName]
             li= countryName
               ul
                 - for (var state in country)

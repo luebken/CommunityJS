@@ -1,15 +1,16 @@
 var couch = require('./couch.js');
 
-var continent = {};
-continent.sortedCountries = function () {
+function sort(member) {
 	var sorted = {},
 	key, keys = [];
-	for (key in this.countries) keys.push(key);
+	for (key in member) {
+	  keys.push(key);
+	}
 	keys.sort();
 	for (var i = 0; i < keys.length; i++) {
-		sorted[keys[i]] = this.countries[keys[i]];
+		sorted[keys[i]] = member[keys[i]];
 	}
-	return sorted;
+	return sorted;	
 }
 
 var groups;
@@ -28,7 +29,7 @@ function getTree(callback) {
 		}
 		groups = {};
 		conferences = {};
-		conferences['Conference'] = Object.create(continent, {countries: { value : {} } });
+		conferences['Conference'] = {}; //dummy continent
 		rawdata = data;
 		for (var i in data) {
 			var continentName = data[i].continent;
@@ -41,20 +42,23 @@ function getTree(callback) {
 			if(continentName != 'Conference') {
 				if(!state) state = 'no-state';
 				if(!groups[continentName]) 
-				groups[continentName] = Object.create(continent, {countries: { value : {} } });
-				if(!groups[continentName].countries[country]) 
-				groups[continentName].countries[country] = [];
-				if(!groups[continentName].countries[country][state]) 
-				groups[continentName].countries[country][state] = [];
-				groups[continentName].countries[country][state].push(item);
+					groups[continentName] = {};
+				if(!groups[continentName][country]) 
+					groups[continentName][country] = [];
+				if(!groups[continentName][country][state]) 
+					groups[continentName][country][state] = [];
+				groups[continentName][country][state].push(item);
+				groups[continentName] = sort(groups[continentName]);
+				groups[continentName][country] = sort(groups[continentName][country]);
 			} else {
 				if(!state) state = 'no-state';				
-				if(!conferences[continentName].countries[country]) 
-				conferences[continentName].countries[country] = [];
-				if(!conferences[continentName].countries[country][state]) 
-				conferences[continentName].countries[country][state] = [];
-				conferences[continentName].countries[country][state].push(item);
+				if(!conferences[continentName][country]) 
+					conferences[continentName][country] = [];
+				if(!conferences[continentName][country][state]) 
+					conferences[continentName][country][state] = [];
+				conferences[continentName][country][state].push(item);
 			}
+			
 		}
 		callback(null, groups, conferences, rawdata);
 	})
