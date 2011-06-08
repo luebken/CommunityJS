@@ -12,23 +12,47 @@
   #main
     h2 JavaScript User Groups & Conferences
     #map_canvas
-    ul
-      - for (var continent in tree)
-        li= (continent == "Conference") ? "Conferences" : continent
-          ul
-            - for (var countryName in tree[continent].sortedCountries())
-              - var country = tree[continent].sortedCountries()[countryName]
-              li= countryName
-                ul
-                  - for (var state in country)
-                    - if(state == 'no-state')
-                      - for (var i = 0; i < country[state].length; i++)
-                        li!= country[state][i]
-                    - else 
-                      li= state
-                        ul
+    ul.tabs
+      li
+        a(href= '#groups') Groups
+      li
+        a(href= '#upcoming') Conferences
+    .tab_container
+      #groups.tab_content
+        ul
+          - for (var continent in groups)
+            li= continent
+              ul
+                - for (var countryName in groups[continent].sortedCountries())
+                  - var country = groups[continent].sortedCountries()[countryName]
+                  li= countryName
+                    ul
+                      - for (var state in country)
+                        - if(state == 'no-state')
                           - for (var i = 0; i < country[state].length; i++)
                             li!= country[state][i]
-    #footer 
-    | Want to add/change a group?
-    a(href="https://groups.google.com/group/communityjs/") Let us know!
+                        - else 
+                          li= state
+                            ul
+                              - for (var i = 0; i < country[state].length; i++)
+                                li!= country[state][i]
+      #upcoming.tab_content
+        ul
+          - for (var countryName in conferences['Conference'].sortedCountries())
+            - var country = conferences['Conference'].sortedCountries()[countryName]
+            li= countryName
+              ul
+                - for (var state in country)
+                  - if(state == 'no-state')
+                    - for (var i = 0; i < country[state].length; i++)
+                      li!= country[state][i]
+                  - else 
+                    li= state
+                      ul
+                        - for (var i = 0; i < country[state].length; i++)
+                          li!= country[state][i]
+      #passed.tab_content
+        This is the content of passed
+    #footer
+      | Want to add/change a group?
+      a(href="https://groups.google.com/group/communityjs/") Let us know!

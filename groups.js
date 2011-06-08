@@ -12,12 +12,13 @@ continent.sortedCountries = function () {
 	return sorted;
 }
 
-var tree;
+var groups;
+var conferences;
 var rawdata; 
 function getTree(callback) {
-	if(tree){
+	if(groups){
 		console.log('using cached data');
-		callback(null, tree, rawdata);
+		callback(null, groups, conferences, rawdata);
 		return;
 	}
 	couch.queryData(function(err, data) {
@@ -25,7 +26,9 @@ function getTree(callback) {
 			callback(err)
 			return;
 		}
-		tree = {};
+		groups = {};
+		conferences = {};
+		conferences['Conference'] = Object.create(continent, {countries: { value : {} } });
 		rawdata = data;
 		for (var i in data) {
 			var continentName = data[i].continent;
@@ -35,16 +38,30 @@ function getTree(callback) {
 			var anchor = '<a name="'+ data[i].id+ '">'+ data[i].town + '</a>';
 			var item = anchor + ': ' + link;
 
-			if(!state) state = 'no-state';
-			if(!tree[continentName]) 
-			tree[continentName] = Object.create(continent, {countries: { value : {} } });
-			if(!tree[continentName].countries[country]) 
-			tree[continentName].countries[country] = [];
-			if(!tree[continentName].countries[country][state]) 
-			tree[continentName].countries[country][state] = [];
-			tree[continentName].countries[country][state].push(item);
+			if(continentName != 'Conference') {
+				if(!state) state = 'no-state';
+				if(!groups[continentName]) 
+				groups[continentName] = Object.create(continent, {countries: { value : {} } });
+				if(!groups[continentName].countries[country]) 
+				groups[continentName].countries[country] = [];
+				if(!groups[continentName].countries[country][state]) 
+				groups[continentName].countries[country][state] = [];
+				groups[continentName].countries[country][state].push(item);
+			} else {
+				if(!state) state = 'no-state';				
+				if(!conferences[continentName].countries[country]) 
+				conferences[continentName].countries[country] = [];
+				if(!conferences[continentName].countries[country][state]) 
+				conferences[continentName].countries[country][state] = [];
+				conferences[continentName].countries[country][state].push(item);
+			}
 		}
-		callback(null, tree, rawdata);
+		callback(null, groups, conferences, rawdata);
 	})
 }
+
+function flushCache() {
+	groups = null;
+}
+module.exports.flushCache = flushCache;
 module.exports.getTree = getTree;

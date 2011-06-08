@@ -8,17 +8,22 @@ app.configure(function(){
 });
 
 app.get('/', function(req, res){
-	groups.getTree(function(err, gtree, rawdata){
+	groups.getTree(function(err, groups, conferences, rawdata){
 	  res.render('index.jade', { 
-	      tree: gtree
+	      groups:groups, conferences:conferences
 	  });
 	});
 });
 
 app.get('/data', function(req, res){
-	groups.getTree(function(err, gtree, rawdata){
+	groups.getTree(function(err, groups, conferences, rawdata){
 	  res.send('var data = '  + JSON.stringify(rawdata)+ ";");  
 	});
+});
+
+app.get('/flushcache', function(req, res){
+	groups.flushCache();
+	res.send('done');
 });
 
 app.get('/about', function(req, res){
