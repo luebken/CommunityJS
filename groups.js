@@ -48,6 +48,7 @@ function getTree(callback) {
 				if(!groups[continentName][country][state]) 
 					groups[continentName][country][state] = [];
 				groups[continentName][country][state].push(item);
+				groups = sort(groups)
 				groups[continentName] = sort(groups[continentName]);
 				groups[continentName][country] = sort(groups[continentName][country]);
 			} else {
