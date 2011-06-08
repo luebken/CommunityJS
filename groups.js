@@ -32,32 +32,30 @@ function getTree(callback) {
 		conferences['Conference'] = {}; //dummy continent
 		rawdata = data;
 		for (var i in data) {
-			var continentName = data[i].continent;
+			var continent = data[i].continent;
 			var country = data[i].country;
 			var state = data[i].state;
 			var link = '<a href="'+ data[i].link+ '">' + data[i].link + '</a>';
-			var anchor = '<a name="'+ data[i].id+ '">'+ data[i].town + '</a>';
-			var item = anchor + ': ' + link;
-
-			if(continentName != 'Conference') {
-				if(!state) state = 'no-state';
-				if(!groups[continentName]) 
-					groups[continentName] = {};
-				if(!groups[continentName][country]) 
-					groups[continentName][country] = [];
-				if(!groups[continentName][country][state]) 
-					groups[continentName][country][state] = [];
-				groups[continentName][country][state].push(item);
+			var item = data[i].town + ': ' + link;
+			if(!state) state = 'no-state';
+			
+			if(continent != 'Conference') {
+				if(!groups[continent]) 
+					groups[continent] = {};
+				if(!groups[continent][country]) 
+					groups[continent][country] = [];
+				if(!groups[continent][country][state]) 
+					groups[continent][country][state] = [];
+				groups[continent][country][state].push(item);
 				groups = sort(groups)
-				groups[continentName] = sort(groups[continentName]);
-				groups[continentName][country] = sort(groups[continentName][country]);
+				groups[continent] = sort(groups[continent]);
+				groups[continent][country] = sort(groups[continent][country]);
 			} else {
-				if(!state) state = 'no-state';				
-				if(!conferences[continentName][country]) 
-					conferences[continentName][country] = [];
-				if(!conferences[continentName][country][state]) 
-					conferences[continentName][country][state] = [];
-				conferences[continentName][country][state].push(item);
+				if(!conferences[continent][country]) 
+					conferences[continent][country] = [];
+				if(!conferences[continent][country][state]) 
+					conferences[continent][country][state] = [];
+				conferences[continent][country][state].push(item);
 			}
 			
 		}
