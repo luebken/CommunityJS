@@ -33,6 +33,7 @@ function getTree(callback) {
 		rawdata = data;
 		for (var i in data) {
 			var continent = data[i].continent;
+			if(!continent) continue;
 			var country = data[i].country;
 			var state = data[i].state;
 			var link = '<a href="'+ data[i].link+ '">' + data[i].link + '</a>';
