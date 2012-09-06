@@ -1,5 +1,5 @@
 var database = {
-	url: 'http://localhost:8000/rawdata'
+	url: 'http://communityjs.org/rawdata'
 }
 module.exports.database = database;
 
