@@ -1,7 +1,5 @@
-var couchdb = {
-	username: 'dedgaisaltobjemsestindin', 
-	password: 'iGuMLAcHPmWqWxqCo3K13Rb4',
-	url: 'https://communityjs.cloudant.com/groups/_all_docs?include_docs=true'
+var database = {
+	url: 'http://localhost:8000/data'
 }
-module.exports.couchdb = couchdb;
+module.exports.database = database;
 

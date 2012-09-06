@@ -1,4 +1,4 @@
-var couch = require('./couch.js');
+var database = require('./database.js');
 
 function sort(member) {
 	var sorted = {},
@@ -22,7 +22,7 @@ function getTree(callback) {
 		callback(null, groups, conferences, rawdata);
 		return;
 	}
-	couch.queryData(function(err, data) {
+	database.queryData(function(err, data) {
 		if(err) {
 			callback(err)
 			return;
