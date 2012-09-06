@@ -1,5 +1,5 @@
 var database = {
-	url: 'http://communityjs.org/rawdata'
+	url: 'https://raw.github.com/CommunityJS/CommunityJSData/master/rawdata'
 }
 module.exports.database = database;
 
